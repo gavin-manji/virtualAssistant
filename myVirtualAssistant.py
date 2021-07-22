@@ -74,7 +74,8 @@ def detectingVoice():
 def responseBack():
     command = detectingVoice()
     print(command)
-
+    
+    # To play music    
     if 'play' in command:
         music = command.replace('play', '')
         speak("Playing ")
